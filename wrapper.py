@@ -2,7 +2,7 @@ import os
 import subprocess
 import yaml
 import shutil
-from trainer.train import InitialTrainer, DefaultTrainer
+from gemma3_trainer.train import InitialTrainer, DefaultTrainer
 from bundler.bundler import Bundler
 
 def run(dataset_path, job_id):
@@ -54,7 +54,7 @@ def run(dataset_path, job_id):
         os.makedirs(tflite_dir)
 
 
-    ## Step 1: Run trainer
+    ## Step 1: Run trainer (for gemma 3)
 
     print("Init trainer...")
     # Check if LoRA adapters already exist

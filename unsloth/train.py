@@ -78,4 +78,5 @@ trainer_stats = trainer.train()
 
 print(trainer_stats)
 
+# save model weights as safetensors
 model.save_pretrained("/mnt/c/Users/UserAdmin/Documents/demo2/server/unsloth/out")
